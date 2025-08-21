@@ -4,6 +4,7 @@ function onClick() {
     return;
   }
   updateLabel();
+  fetch("/test");
 }
 function inputsAreEmpty() {
   if (getNumber1() === "" || getNumber2() === "") {
