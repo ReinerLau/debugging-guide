@@ -29,3 +29,7 @@ var inputs = document.querySelectorAll("input");
 var label = document.querySelector("p");
 var button = document.querySelector("button");
 button.addEventListener("click", onClick);
+
+fetch("https://jsonplaceholder.typicode.com/todos/1")
+  .then((response) => response.json())
+  .then((json) => console.log(json));
